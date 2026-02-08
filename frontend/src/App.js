@@ -9,7 +9,7 @@ function App() {
 
   const trainAgent = async () => {
     setLoading(true);
-    const res = await fetch("http://localhost:5000/train");
+    const res = await fetch("https://rl-backend-3ndj.onrender.com/train");
     const result = await res.json();
     setData(result);
     setLoading(false);
